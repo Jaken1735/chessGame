@@ -1,0 +1,96 @@
+if (isWhite) {
+                    //if (to_x-from_x==1 || to_x-from_x==2){ //provade lägga till denna
+                    d_row = -1;
+                    for (row  = from_x + d_row; row != to_x; row += d_row){
+                        if (board[row][to_y] != null){return false;}
+                    }
+                    if (board[to_x][to_y] == null) {
+                        first = false;
+                        return true;
+                    }
+                    return false;
+                }
+                else {
+                    d_row = 1;
+                    for (row  = from_x + d_row; row != to_x; row += d_row){
+                        if (board[row][to_y] != null){return false;}
+                    }
+                    if (board[to_x][to_y] == null) {
+                        first = false;
+                        return true;
+                    }
+                    return false;
+                }
+
+
+if (cmessage.startsWith("King")) {
+                        int yesOrno = JOptionPane.showOptionDialog(gameWindow, "If you complete this move your King will be in danger, do you wish to complete the move?",
+                                 "King in Danger!", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[1]);
+                        if (yesOrno == 1) {
+
+                            board[]
+
+
+                        }
+
+
+                    }
+
+
+System.out.println(vMovelist);
+                    System.out.println(vMovelist.size());
+                    for (int t = 0; t < vMovelist.size(); t++) {
+                        int move = vMovelist.get(t);
+                        int row = move / 8;
+                        int col = move % 8;
+                        System.out.println(row);
+                        System.out.println(col);
+                        System.out.print("______");
+                        System.out.println();
+                        board[row][col] = board[savedx][savedy];
+                        board[savedx][savedy] = null;
+
+                        checkKingNotInDanger();
+                        System.out.println(21);
+
+                        board[savedx][savedy] = board[row][col];
+                        board[row][col] = null;
+
+                    }
+                    identidfylegalMoves(savedx, savedy);
+                    System.out.print("HEJ");
+
+
+for (int j = 0; j < paintRed.size(); j++) {
+                        int convertCor2 = paintRed.get(j);
+                        int x2 = convertCor2 / 8;
+                        int y2 = convertCor2 % 8;
+                        board[x2][y2].setBackground(Color.RED);
+                    }
+
+
+
+else {
+                    if (Objects.equals(this.getStatus(i, j), "wKing")){
+                        king_row = i;
+                        king_col = j;
+                    }
+                    if (Objects.equals(this.getStatus(i, j), "bPawn")){
+                        coorList.add(i * 8 + j);
+                    }
+                    if (Objects.equals(this.getStatus(i, j), "bRook")){
+                        coorList.add(i * 8 + j);
+                    }
+                    if (Objects.equals(this.getStatus(i, j), "bKnight")){
+                        coorList.add(i * 8 + j);
+                    }
+                    if (Objects.equals(this.getStatus(i, j), "bBishop")){
+                        coorList.add(i * 8 + j);
+                    }
+                    if (Objects.equals(this.getStatus(i, j), "bQueen")){
+                        coorList.add(i * 8 + j);
+                    }
+                    if (Objects.equals(this.getStatus(i, j), "bKing")){
+                        coorList.add(i * 8 + j);
+                    }
+                }
